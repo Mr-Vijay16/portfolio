@@ -94,8 +94,8 @@ const Contact = () => {
     {
       icon: <Github className="h-5 w-5" />,
       label: 'GitHub',
-      value: 'github.com/user163737',
-      href: 'https://github.com/user163737',
+      value: 'github.com/Mr-Vijay16',
+      href: 'https://github.com/Mr-Vijay16',
     },
   ];
 
