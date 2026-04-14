@@ -5,6 +5,7 @@ import { Phone, Mail, Linkedin, Github , } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import SectionHeading from './common/SectionHeading';
 
+
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [ref, inView] = useInView({
@@ -74,25 +75,49 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="h-5 w-5" />,
+      icon: <Phone className="bg-green-100 text-green-600" />,
       label: 'Phone',
       value: '+91 9121359484',
       href: 'tel:+919121359484',
     },
     {
-      icon: <Mail className="h-5 w-5" />,
+      icon: (
+  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+      alt="gmail"
+      className="h-5 w-5"
+    />
+  </div>
+),
       label: 'Email',
       value: 'hsvijay264737@gmail.com',
       href: 'mailto:hsvijay264737@gmail.com',
     },
     {
-      icon: <Linkedin className="h-5 w-5" />,
+     icon: (
+  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+      alt="linkedin"
+      className="h-5 w-5"
+    />
+  </div>
+),
       label: 'LinkedIn',
       value: 'linkedin.com/in/hs-vijay',
       href: 'https://linkedin.com/in/hs-vijay',
     },
     {
-      icon: <Github className="h-5 w-5" />,
+     icon: (
+  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      alt="github"
+      className="h-5 w-5"
+    />
+  </div>
+),
       label: 'GitHub',
       value: 'github.com/Mr-Vijay16',
       href: 'https://github.com/Mr-Vijay16',

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Code2, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { FileText } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,89 +40,105 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'py-3 bg-white/90 backdrop-blur-sm shadow-sm'
-          : 'py-5 bg-transparent'
-      }`}
-    >
-      <div className="container-custom flex items-center justify-between">
-        
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <Code2 className="h-7 w-7 text-accent" />
-          <span className="font-medium text-xl">H S Vijay</span>
-        </a>
-        
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6">
-          <nav>
-            <ul className="flex space-x-8 relative">
-              {navItems.map((item) => (
-                <li key={item.name} className="relative">
-                  <a
-                    href={item.href}
-                    className={`nav-link text-sm font-medium block pb-1 transition-colors ${
-                      activeSection === item.id ? 'text-accent' : ''
-                    }`}
-                  >
-                    {item.name}
-                  </a>
-                  {activeSection === item.id && (
-                    <motion.div
-                      layoutId="activeSection"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"
-                      initial={false}
-                      transition={{
-                        type: "spring",
-                        stiffness: 380,
-                        damping: 30
-                      }}
-                    />
-                  )}
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+  className={`fixed w-full z-50 transition-all duration-300 ${
+    isScrolled 
+      ? 'py-3 bg-white/90 backdrop-blur-sm shadow-sm'
+      : 'py-5 bg-transparent'
+  }`}
+>
+  <div className="container-custom flex items-center justify-between">
 
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="inline-flex items-center p-2 md:hidden text-primary-800"
-          aria-expanded={isMobileMenuOpen}
-        >
-          <span className="sr-only">Open main menu</span>
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+    {/* LEFT SIDE */}
+    <div className="flex items-center gap-3">
+      {/* Logo */}
+      <a href="#" className="flex items-center gap-2">
+        <Code2 className="h-7 w-7 text-accent" />
+        <span className="font-medium text-xl">H S Vijay</span>
+      </a>
+
+      {/* Resume Button */}
+      <a
+        href="/H_S_Vijay_Frontend_Developer_1.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-accent text-white text-xs font-medium hover:bg-accent/90 transition"
+      >
+        <FileText size={14} />
+        Resume
+      </a>
+    </div>
+
+    {/* RIGHT SIDE (Desktop Menu) */}
+    <div className="hidden md:flex items-center gap-6">
+      <nav>
+        <ul className="flex space-x-8 relative">
+          {navItems.map((item) => (
+            <li key={item.name} className="relative">
+              <a
+                href={item.href}
+                className={`nav-link text-sm font-medium block pb-1 transition-colors ${
+                  activeSection === item.id ? 'text-accent' : ''
+                }`}
+              >
+                {item.name}
+              </a>
+
+              {activeSection === item.id && (
+                <motion.div
+                  layoutId="activeSection"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"
+                  initial={false}
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 30
+                  }}
+                />
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+
+    {/* Mobile Menu Button */}
+    <button
+      onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      className="inline-flex items-center p-2 md:hidden text-primary-800"
+      aria-expanded={isMobileMenuOpen ? "true" : "false"}
+    >
+      <span className="sr-only">Open main menu</span>
+      {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+    </button>
+
+  </div>
+
+  {/* Mobile Navigation */}
+  {isMobileMenuOpen && (
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg"
+    >
+      <div className="container-custom py-4">
+        <ul className="flex flex-col space-y-3">
+          {navItems.map((item) => (
+            <li key={item.name}>
+              <a
+                href={item.href}
+                className="block py-2 nav-link text-base font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-      
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg"
-        >
-          <div className="container-custom py-4">
-            <ul className="flex flex-col space-y-3">
-              {navItems.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="block py-2 nav-link text-base font-medium"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </motion.div>
-      )}
-    </header>
+    </motion.div>
+  )}
+</header>
   );
 };
 

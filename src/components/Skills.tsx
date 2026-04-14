@@ -36,6 +36,17 @@ const Skills = () => {
 
   const skills: Skill[] = [
     {
+      name: 'Python',
+      category: 'Languages',
+      icon: (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    alt="Python"
+    className="w-8 h-8"
+  />
+),
+    },
+    {
       name: 'Java',
       category: 'Languages',
       icon: (
@@ -57,17 +68,7 @@ const Skills = () => {
   />
 ),
     },
-    {
-      name: 'Python',
-      category: 'Languages',
-      icon: (
-  <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-    alt="Python"
-    className="w-8 h-8"
-  />
-),
-    },
+    
     {
       name: 'HTML',
       category: 'Web Technologies',
@@ -110,17 +111,7 @@ const Skills = () => {
 />
   ),
 },
-    {
-      name: 'Eclipse',
-      category: 'Tools',
-      icon: (
-  <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
-    alt="Eclipse"
-    className="w-8 h-8"
-  />
-),
-    },
+    
     {
       name: 'VSCode',
       category: 'Tools',
@@ -155,12 +146,12 @@ const Skills = () => {
 ),
     },
     {
-      name: 'MySQL',
-      category: 'Databases',
+      name: 'Eclipse',
+      category: 'Tools',
       icon: (
   <img 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-    alt="MySQL"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
+    alt="Eclipse"
     className="w-8 h-8"
   />
 ),
@@ -176,6 +167,18 @@ const Skills = () => {
     />
   ),
 },
+    {
+      name: 'MySQL',
+      category: 'Databases',
+      icon: (
+  <img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    alt="MySQL"
+    className="w-8 h-8"
+  />
+),
+    },
+    
   ];
 
   // Group skills by category
