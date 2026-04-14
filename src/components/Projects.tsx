@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github } from 'lucide-react';
@@ -49,10 +48,18 @@ const Projects = () => {
       liveLink: 'https://simple-calculator-steel-one.vercel.app/',
       githubLink: 'https://github.com/user163737/Simple-Calculator/tree/main/project',
     },
+     {
+       title: 'GitHub Portfolio Website',
+      description: 'My first personal portfolio website built using HTML and CSS, hosted on GitHub Pages. It showcases my basic web development skills and projects.',
+      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      tags: ['Web App', 'Frontend'],
+      liveLink: 'https://mr-vijay16.github.io/',
+      githubLink: 'https://github.com/Mr-Vijay16/mr-vijay16.github.io',
+   },
     {
       title: 'Age Calculator',
       description: 'A user-friendly age calculator that computes your exact age in years, months, and days. Built with a clean interface and accurate date calculations for precise age determination.',
-      image: 'https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: 'https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&w=1260&q=80',
       tags: ['Web App', 'Frontend'],
       liveLink: 'https://age-calculator-ebon-beta.vercel.app/',
       githubLink: 'https://github.com/user163737/Age-Calculator/tree/main/Age%20Calculator',
@@ -60,7 +67,7 @@ const Projects = () => {
     {
       title: 'Weather Application',
       description: 'A modern weather application that provides real-time weather information for any location. Features current weather conditions, forecasts, and an intuitive user interface with responsive design.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: 'https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1260&q=80',
       tags: ['Web App', 'Frontend'],
       liveLink: 'https://weather-application-pink-delta.vercel.app/',
       githubLink: 'https://github.com/user163737/Weather-Application/tree/main/Weather%20Application',

@@ -97,6 +97,18 @@ const Contact = () => {
       value: 'github.com/Mr-Vijay16',
       href: 'https://github.com/Mr-Vijay16',
     },
+    {
+      icon: (
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+    alt="LeetCode"
+    className="h-5 w-5"
+  />
+),
+      label: 'LeetCode',
+      value: 'leetcode.com/u/vijay1612',
+      href: 'https://leetcode.com/u/vijay1612',
+    },
   ];
 
   return (
@@ -109,9 +121,9 @@ const Contact = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid md:grid-cols-2 gap-12"
+          className="grid md:grid-cols-2 gap-12 items-start"
         >
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} className="h-full">
             <h3 className="text-xl font-medium text-primary-900 mb-6">
               Get In Touch
             </h3>
@@ -139,27 +151,10 @@ const Contact = () => {
               ))}
             </div>
             
-            <div className="mt-8">
-              <h4 className="text-lg font-medium text-primary-900 mb-4">
-                Find me on LeetCode
-              </h4>
-              <a 
-                href="https://leetcode.com/u/vijay1612" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-accent hover:underline"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
-                  <path d="m7 8 10 8"></path>
-                  <path d="m7 16 10-8"></path>
-                </svg>
-                leetcode.com/u/vijay1612
-              </a>
-            </div>
           </motion.div>
           
-          <motion.div variants={itemVariants}>
-            <div className="bg-primary-50 p-8 rounded-2xl">
+          <motion.div variants={itemVariants} className="h-full">
+           <div className="bg-primary-50 p-8 rounded-2xl h-full flex flex-col justify-between">
               <h3 className="text-xl font-medium text-primary-900 mb-6">
                 Send Me a Message
               </h3>

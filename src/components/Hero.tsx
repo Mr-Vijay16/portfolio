@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const Hero = () => {
             <p className="text-accent text-sm md:text-base tracking-widest uppercase mb-2">Hello, I'm</p>
             <h1 className="text-primary-900 mb-4">H S Vijay</h1>
             <p className="text-primary-600 text-xl md:text-2xl">
-              Aspiring Full Stack Developer | Passionate about Web Design & UI/UX
+              Aspiring Full Stack Developer | Passionate about Web Designing
             </p>
           </motion.div>
           

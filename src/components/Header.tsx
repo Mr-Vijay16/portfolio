@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Code2, Menu, X, Sun, Moon } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Code2, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
-  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const navItems = [
     { name: 'Home', href: '#hero', id: 'hero' },
@@ -47,6 +46,7 @@ const Header = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between">
+        
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <Code2 className="h-7 w-7 text-accent" />
@@ -57,7 +57,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-6">
           <nav>
             <ul className="flex space-x-8 relative">
-              {navItems.map((item, index) => (
+              {navItems.map((item) => (
                 <li key={item.name} className="relative">
                   <a
                     href={item.href}
@@ -83,31 +83,6 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-
-          {/* Dark/Light Mode Toggle */}
-          <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="relative inline-flex items-center h-9 w-16 rounded-full bg-primary-200 transition-colors hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-            aria-label="Toggle dark mode"
-          >
-            <motion.div
-              className="absolute h-7 w-7 rounded-full bg-white shadow-md flex items-center justify-center"
-              animate={{
-                x: isDarkMode ? 32 : 4
-              }}
-              transition={{
-                type: "spring",
-                stiffness: 500,
-                damping: 30
-              }}
-            >
-              {isDarkMode ? (
-                <Moon className="h-4 w-4 text-primary-700" />
-              ) : (
-                <Sun className="h-4 w-4 text-accent" />
-              )}
-            </motion.div>
-          </button>
         </div>
 
         {/* Mobile menu button */}
@@ -127,7 +102,7 @@ const Header = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-primary-800 shadow-lg"
+          className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg"
         >
           <div className="container-custom py-4">
             <ul className="flex flex-col space-y-3">
@@ -143,34 +118,6 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-
-            {/* Mobile Dark/Light Mode Toggle */}
-            <div className="mt-4 pt-4 border-t border-primary-200 dark:border-primary-700 flex items-center justify-between">
-              <span className="text-sm font-medium text-primary-700 dark:text-primary-200">Theme</span>
-              <button
-                onClick={() => setIsDarkMode(!isDarkMode)}
-                className="relative inline-flex items-center h-9 w-16 rounded-full bg-primary-200 transition-colors hover:bg-primary-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-                aria-label="Toggle dark mode"
-              >
-                <motion.div
-                  className="absolute h-7 w-7 rounded-full bg-white shadow-md flex items-center justify-center"
-                  animate={{
-                    x: isDarkMode ? 32 : 4
-                  }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 500,
-                    damping: 30
-                  }}
-                >
-                  {isDarkMode ? (
-                    <Moon className="h-4 w-4 text-primary-700" />
-                  ) : (
-                    <Sun className="h-4 w-4 text-accent" />
-                  )}
-                </motion.div>
-              </button>
-            </div>
           </div>
         </motion.div>
       )}
