@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Code2, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { FileText } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,21 +51,25 @@ const Header = () => {
     {/* LEFT SIDE */}
     <div className="flex items-center gap-3">
       {/* Logo */}
-      <a href="#" className="flex items-center gap-2">
-        <Code2 className="h-7 w-7 text-accent" />
-        <span className="font-medium text-xl">H S Vijay</span>
-      </a>
+      <a href="#" className="flex items-center gap-3">
+  <img
+    src="/profile.jpeg"
+    alt="H S Vijay"
+    className="w-8 h-8 rounded-full object-cover"
+  />
+  <span className="font-medium text-xl">H S Vijay</span>
+</a>
 
       {/* Resume Button */}
       <a
-        href="/H_S_Vijay_Frontend_Developer_1.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-accent text-white text-xs font-medium hover:bg-accent/90 transition"
-      >
-        <FileText size={14} />
-        Resume
-      </a>
+  href="/H_S_Vijay_Frontend_Developer_1.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white text-sm font-medium hover:bg-accent/90 transition"
+>
+  <Eye size={16} />
+  Resume
+</a>
     </div>
 
     {/* RIGHT SIDE (Desktop Menu) */}
