@@ -78,7 +78,7 @@ npm run dev
 
 ## 🙋‍♂️ Author
 
-**Vijay H S**
+**H S Vijay**
 Aspiring Full Stack Developer
 
 ---
