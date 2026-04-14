@@ -1,6 +1,6 @@
 # 💼 Vijay Portfolio
 
-This is my personal portfolio website built to showcase my skills, projects, and experience as a Full Stack Developer.
+This is my personal portfolio website built to showcase my skills, projects, as i'm a Full Stack Developer.
 
 🔗 Live Demo: https://portfolio-tan-beta-95.vercel.app/
 
