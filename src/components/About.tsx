@@ -35,10 +35,10 @@ const About = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-accent/10 to-accent/5 rotate-3 transform"></div>
               <div className="relative overflow-hidden rounded-2xl bg-gray-100">
                 <img 
-  src="/portfolio/Linkedin_Profile.jpg"
-  alt="H S Vijay"
-  className="w-full h-[500px] object-cover object-top"
-/>
+                  src="/Linkedin_Profile.jpg" 
+                  alt="H S Vijay"
+                  className="w-full h-[500px] object-cover object-top"
+                />
               </div>
             </div>
           </motion.div>
