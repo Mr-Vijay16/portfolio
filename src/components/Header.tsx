@@ -62,11 +62,8 @@ const Header = () => {
 
       {/* Resume Button */}
       <a
-<<<<<<< HEAD
-  href="/portfolio/H_S_Vijay_Frontend_Developer_1.pdf"
-=======
-  href={`${import.meta.env.BASE_URL}H_S_Vijay_Frontend_Developer_1.pdf`}
->>>>>>> de1ffbfd62b842ecb494c6e9428c37e212e99f10
+
+  href="/portfolio/H_S_Vijay_Python_Dev.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white text-sm font-medium hover:bg-accent/90 transition"
