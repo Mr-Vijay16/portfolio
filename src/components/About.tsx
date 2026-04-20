@@ -45,14 +45,15 @@ const About = () => {
           
           <motion.div variants={variants}>
             <h3 className="text-primary-900 text-2xl font-medium mb-4">
-              Aspiring Java Full Stack Developer
+              Aspiring Python Full Stack Developer
             </h3>
             
             <p className="text-primary-700 mb-6">
-              As a passionate and detail-oriented Java Full Stack Developer in training, I aim to begin my 
-              career in a dynamic IT environment. I seek opportunities to apply my knowledge of front-end 
-              and back-end technologies to real-world projects. My goal is to continuously learn, grow, 
-              and contribute to building innovative software solutions.
+              As a passionate and detail-oriented Python Full Stack Developer in training, 
+              I aim to begin my career in a dynamic IT environment. I seek opportunities 
+              to apply my knowledge of front-end and back-end technologies to real-world projects. 
+              My goal is to continuously learn, grow, and contribute to building innovative 
+              software solutions.
             </p>
             
             <div className="space-y-4">
