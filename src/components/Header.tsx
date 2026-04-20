@@ -53,7 +53,7 @@ const Header = () => {
       {/* Logo */}
       <a href="#" className="flex items-center gap-3">
   <img
-    src="/profile.jpeg"
+    src="/portfolio/profile.jpeg"
     alt="H S Vijay"
     className="w-8 h-8 rounded-full object-cover"
   />
@@ -62,7 +62,7 @@ const Header = () => {
 
       {/* Resume Button */}
       <a
-  href="/H_S_Vijay_Frontend_Developer_1.pdf"
+  href="/portfolio/H_S_Vijay_Frontend_Developer_1.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white text-sm font-medium hover:bg-accent/90 transition"

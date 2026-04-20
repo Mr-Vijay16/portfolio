@@ -35,24 +35,25 @@ const About = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-accent/10 to-accent/5 rotate-3 transform"></div>
               <div className="relative overflow-hidden rounded-2xl bg-gray-100">
                 <img 
-                  src="/Linkedin_Profile.jpg" 
-                  alt="H S Vijay"
-                  className="w-full h-[500px] object-cover object-top"
-                />
+  src="/portfolio/Linkedin_Profile.jpg"
+  alt="H S Vijay"
+  className="w-full h-[500px] object-cover object-top"
+/>
               </div>
             </div>
           </motion.div>
           
           <motion.div variants={variants}>
             <h3 className="text-primary-900 text-2xl font-medium mb-4">
-              Aspiring Java Full Stack Developer
+              Aspiring Python Full Stack Developer
             </h3>
             
             <p className="text-primary-700 mb-6">
-              As a passionate and detail-oriented Java Full Stack Developer in training, I aim to begin my 
-              career in a dynamic IT environment. I seek opportunities to apply my knowledge of front-end 
-              and back-end technologies to real-world projects. My goal is to continuously learn, grow, 
-              and contribute to building innovative software solutions.
+              As a passionate and detail-oriented Python Full Stack Developer in training, 
+              I aim to begin my career in a dynamic IT environment. I seek opportunities 
+              to apply my knowledge of front-end and back-end technologies to real-world projects. 
+              My goal is to continuously learn, grow, and contribute to building innovative 
+              software solutions.
             </p>
             
             <div className="space-y-4">

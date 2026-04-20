@@ -41,6 +41,17 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      title: 'Dark Mode Toggle',
+      description: 'A simple dark mode toggle component for React applications. Allows users to switch between light and dark themes with a smooth transition.',
+      image:"/portfolio/DarkMode.jpg",
+      tags: ['Web App', 'Frontend'],
+      liveLink: 'https://mr-vijay16.github.io/Toggle_Button/',
+      githubLink: 'https://github.com/Mr-Vijay16/Toggle_Button',
+    },
+    {
+      
+
+      
       title: 'Simple Calculator',
       description: 'A clean and intuitive calculator application built with modern web technologies. Features basic arithmetic operations with a responsive design and smooth user experience.',
       image: 'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
