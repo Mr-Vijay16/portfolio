@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github } from 'lucide-react';
 import SectionHeading from './common/SectionHeading';
 
-type ProjectTag = 'Web App' | 'Frontend' | 'Backend' | 'Bolt.ai';
+type ProjectTag = 'Web App' | 'Frontend' | 'Backend' | 'Full Stack';
 
 type Project = {
   title: string;
@@ -40,40 +40,23 @@ const Projects = () => {
   };
 
   const projects: Project[] = [
-    {
-      title: 'Dark Mode Toggle',
-      description: 'A simple dark mode toggle component for React applications. Allows users to switch between light and dark themes with a smooth transition.',
-      image:"/portfolio/DarkMode.jpg",
-      tags: ['Web App', 'Frontend'],
-      liveLink: 'https://mr-vijay16.github.io/Toggle_Button/',
-      githubLink: 'https://github.com/Mr-Vijay16/Toggle_Button',
-    },
-    {
-      
 
-      
-      title: 'Simple Calculator',
-      description: 'A clean and intuitive calculator application built with modern web technologies. Features basic arithmetic operations with a responsive design and smooth user experience.',
-      image: 'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      tags: ['Web App', 'Frontend'],
-      liveLink: 'https://simple-calculator-steel-one.vercel.app/',
-      githubLink: 'https://github.com/user163737/Simple-Calculator/tree/main/project',
+{
+      title: 'Hostel Management System',
+      description: 'A hostel management system that helps students and administrators manage room allocations, admissions, fee payments, and hostel records efficiently.',
+      image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80',
+      tags: ['Full Stack', 'Frontend', 'Backend'],
+      liveLink: 'https://hostel-management-system-aawv.onrender.com/',
+      githubLink: 'https://hostel-management-system-aawv.onrender.com/',
     },
-     {
-       title: 'GitHub Portfolio Website',
-      description: 'My first personal portfolio website built using HTML and CSS, hosted on GitHub Pages. It showcases my basic web development skills and projects.',
-      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      tags: ['Web App', 'Frontend'],
-      liveLink: 'https://mr-vijay16.github.io/',
-      githubLink: 'https://github.com/Mr-Vijay16/mr-vijay16.github.io',
-   },
+
     {
-      title: 'Age Calculator',
-      description: 'A user-friendly age calculator that computes your exact age in years, months, and days. Built with a clean interface and accurate date calculations for precise age determination.',
-      image: 'https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&w=1260&q=80',
+      title: 'Tasty Recipes',
+      description: 'A recipe-sharing platform that allows users to view, submit, and comment on recipes. Built entirely using Bolt.ai.',
+      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       tags: ['Web App', 'Frontend'],
-      liveLink: 'https://age-calculator-ebon-beta.vercel.app/',
-      githubLink: 'https://github.com/user163737/Age-Calculator/tree/main/Age%20Calculator',
+      liveLink: 'https://cosmic-crepe-64f283.netlify.app/',
+      githubLink: 'https://github.com/user163737/Tasty-Recipes/tree/main/Tasty%20Recipies%20Project',
     },
     {
       title: 'Weather Application',
@@ -83,14 +66,7 @@ const Projects = () => {
       liveLink: 'https://weather-application-pink-delta.vercel.app/',
       githubLink: 'https://github.com/user163737/Weather-Application/tree/main/Weather%20Application',
     },
-    {
-      title: 'Tasty Recipes',
-      description: 'A recipe-sharing platform that allows users to view, submit, and comment on recipes. Built entirely using Bolt.ai.',
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      tags: ['Web App', 'Frontend'],
-      liveLink: 'https://cosmic-crepe-64f283.netlify.app/',
-      githubLink: 'https://github.com/user163737/Tasty-Recipes/tree/main/Tasty%20Recipies%20Project',
-    },
+    
   ];
 
   return (
