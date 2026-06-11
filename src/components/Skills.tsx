@@ -111,6 +111,17 @@ const Skills = () => {
 />
   ),
 },
+    {
+  name: 'Django',
+  category: 'Frameworks',
+  icon: (
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+      alt="Django"
+      className="w-8 h-8"
+    />
+  ),
+},
 
 {
   name: 'Django',
