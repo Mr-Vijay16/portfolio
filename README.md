@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built to showcase my skills, projects, as I'm a Fresher Full Stack Developer.
 
-🔗 Live Demo: https://portfolio-tan-beta-95.vercel.app/
+🔗 Live Demo: https://mr-vijay16.github.io/portfolio/
 
 ---
 
