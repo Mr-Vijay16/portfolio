@@ -63,7 +63,7 @@ const Header = () => {
       {/* Resume Button */}
       <a
 
-  href="/portfolio/H_S_Vijay_Python_Dev.pdf"
+  href="/portfolio/H_S_Vijay_Python_Dev_M.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white text-sm font-medium hover:bg-accent/90 transition"
