@@ -49,14 +49,26 @@ const Projects = () => {
       liveLink: 'https://hostel-management-system-aawv.onrender.com/',
       githubLink: 'https://hostel-management-system-aawv.onrender.com/',
     },
+    {
+  title: 'College Admission System',
+  description:
+    'A full-stack web application that streamlines college admission management by enabling administrators to manage student registrations, admissions, reports, backups, and academic records through a secure and responsive dashboard.',
 
+ image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&auto=format&fit=crop&q=80',
+
+  tags: ['Frontend', 'Backend'],
+
+  liveLink: 'https://mti-lms.onrender.com/',
+
+  githubLink: 'https://github.com/Mr-Vijay16/MTI-LMS',
+},
     {
       title: 'Tasty Recipes',
       description: 'A recipe-sharing platform that allows users to view, submit, and comment on recipes. Built entirely using Bolt.ai.',
       image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       tags: ['Web App', 'Frontend'],
-      liveLink: 'https://cosmic-crepe-64f283.netlify.app/',
-      githubLink: 'https://github.com/user163737/Tasty-Recipes/tree/main/Tasty%20Recipies%20Project',
+      liveLink: 'https://mr-vijay16.github.io/TastyRecipes/',
+      githubLink: 'https://github.com/Mr-Vijay16/TastyRecipes',
     },
     {
       title: 'Weather Application',
