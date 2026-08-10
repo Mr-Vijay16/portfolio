@@ -9,13 +9,14 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
   const navItems = [
-    { name: 'Home', href: '#hero', id: 'hero' },
-    { name: 'About', href: '#about', id: 'about' },
-    { name: 'Skills', href: '#skills', id: 'skills' },
-    { name: 'Services', href: '#services', id: 'services' },
-    { name: 'Projects', href: '#projects', id: 'projects' },
-    { name: 'Contact', href: '#contact', id: 'contact' },
-  ];
+  { name: 'Home', href: '#hero', id: 'hero' },
+  { name: 'About', href: '#about', id: 'about' },
+  { name: 'Skills', href: '#skills', id: 'skills' },
+  { name: 'Services', href: '#services', id: 'services' },
+  { name: 'Projects', href: '#projects', id: 'projects' },
+  { name: 'Certificates', href: '#certificates', id: 'certificates' },
+  { name: 'Contact', href: '#contact', id: 'contact' },
+];
 
   useEffect(() => {
     const handleScroll = () => {
