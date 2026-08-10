@@ -75,7 +75,7 @@ const Certificates = () => {
   initial="hidden"
   animate={inView ? 'visible' : 'hidden'}
   variants={containerVariants}
-  className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"
+  className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4 md:px-0"
 >
   {certificates.map((certificate, index) => (
     <motion.div
