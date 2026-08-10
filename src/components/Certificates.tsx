@@ -36,6 +36,19 @@ const Certificates = () => {
   };
 
   const certificates: Certificate[] = [
+
+    {
+  title: 'Claude 101',
+  organization: 'Anthropic',
+  date: '2026',
+  image: '/portfolio/certificates/claude-101.jpg',
+},
+{
+  title: 'GenAI Powered Data Analytics Job Simulation',
+  organization: 'Tata / Forge',
+  date: 'July 11, 2026',
+  image: '/portfolio/certificates/tata-genai-data-analytics.jpg',
+},
     {
       title: 'Introduction to Data Science',
       organization: 'IBM / edX',
@@ -63,7 +76,7 @@ const Certificates = () => {
   ];
 
   return (
-    <section id="certificates" className="section">
+    <section id="certificates" className="section pt-16 md:pt-20">
       <div className="container">
         <SectionHeading
           title="Certificates"
@@ -75,7 +88,12 @@ const Certificates = () => {
   initial="hidden"
   animate={inView ? 'visible' : 'hidden'}
   variants={containerVariants}
-  className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4 md:px-0"
+  className="grid md:grid-cols-2 gap-6 md:relative md:left-8"
+style={{
+  width: 'calc(100% - 32px)',
+  maxWidth: '1100px',
+  margin: '0 auto',
+}}
 >
   {certificates.map((certificate, index) => (
     <motion.div
