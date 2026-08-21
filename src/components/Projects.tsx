@@ -46,16 +46,14 @@ const Projects = () => {
       description: 'A hostel management system that helps students and administrators manage room allocations, admissions, fee payments, and hostel records efficiently.',
       image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80',
       tags: ['Full Stack'],
-      liveLink: 'https://hostel-management-system-aawv.onrender.com/',
-      githubLink: 'https://github.com/Mr-Vijay16/Hostel-Management-System',
+      
     },
     {
       title: 'Tasty Recipes',
       description: 'A recipe-sharing platform that allows users to view, submit, and comment on recipes. Features a user-friendly interface with responsive design.',
       image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       tags: ['Web App', 'Full Stack'],
-      liveLink: 'https://tasty-recipes-3hzq.onrender.com/',
-      githubLink: 'https://github.com/Mr-Vijay16/Tasty-Recipes',
+      
     },
     {
   title: 'College Admission System',
