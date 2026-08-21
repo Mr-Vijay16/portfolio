@@ -53,6 +53,8 @@ const Projects = () => {
       description: 'A recipe-sharing platform that allows users to view, submit, and comment on recipes. Features a user-friendly interface with responsive design.',
       image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       tags: ['Web App', 'Full Stack'],
+      liveLink: 'https://tasty-recipes-2kkv.onrender.com/',
+      githubLink: 'https://github.com/Mr-Vijay16/Tasty-Recipes',
       
     },
     {
