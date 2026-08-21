@@ -66,9 +66,9 @@ const Projects = () => {
 
   tags: ['Frontend', 'Backend'],
 
-  liveLink: 'https://mti-lms.onrender.com/',
+  liveLink: 'https://mtiet.onrender.com/',
 
-  githubLink: 'https://github.com/Mr-Vijay16/MTI-LMS',
+  githubLink: 'https://github.com/Mr-Vijay16/MTIET',
 },
     
     {
